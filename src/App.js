@@ -17,7 +17,6 @@ export default function App() {
   useEffect(
     function () {
       const fetchWeather = async () => {
-        // if (this.state.location.length < 3) return this.setState({ weather: {} });
         try {
           setIsLoading(true);
           // 1) Getting location (geocoding)

@@ -21,6 +21,12 @@ body {
   justify-content: center;
 }
 
+@media screen and (max-width: 786px) {
+  body {
+    display: block;
+  }
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -33,11 +39,35 @@ body {
   outline-offset: 1.2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3;
+
+    padding: 4rem 2rem;
+
+    border: 2px solid #222;
+    outline: 2px solid #222;
+    outline-offset: 0.8rem;
+    width: 100%;
+
+    overflow-y: scroll;
+  }
+}
+
 h1 {
   font-weight: 400;
   font-size: 6rem;
   letter-spacing: 2px;
   word-spacing: 5px;
+}
+
+@media screen and (max-width: 786px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 h2 {
@@ -63,6 +93,14 @@ input:focus {
   list-style: none;
   display: flex;
   gap: 2.4rem;
+}
+
+@media screen and (max-width: 786px) {
+  .weather {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .day {
